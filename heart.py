@@ -17,3 +17,10 @@ turtle.left(120)
 func()
 turtle.forward(111.65)
 turtle.end_fill()
+
+# Add animated text
+turtle.penup()
+turtle.goto(0, -50)  # Position text below the heart
+turtle.color("white")
+turtle.write("I love you ", align="center", font=("Brush Script MT", 24, "italic"))
+turtle.hideturtle()
