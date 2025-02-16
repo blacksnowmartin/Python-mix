@@ -4,4 +4,4 @@ qr = qrcode.make("")
 
 qr.save("my_qrcode.png")
 
-print("Aaand DONE!)
+print("Aaand DONE!")
