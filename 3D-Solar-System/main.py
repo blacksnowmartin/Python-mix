@@ -7,12 +7,12 @@ def update():
     t = t + 0.02
     angle = math.pi*40/180
     
-    # xoay quanh mặt trời
-    # biến radius là khoảng cách giữa hành tinh và mặt trời
-    # biến angle là góc hợp bởi mặt trời trên mặt phẳng Oxy
-    # có tất cả 9 hành tinh xoay quanh mặt trời nên 360/9 = 40, mỗi hành tinh cách nhau 40 độ, angle có đơn vị là radians
-    # biến t là biến thời gian, tức là khi lấy cos, sin của t thì mỗi frame các hành tinh sẽ thay đổi vị trí theo tọa độ được tính theo t
-    # 9 hành tinh này tôi cho bừa khoảng cách vì lười tính hê hê
+# revolves around the sun
+# radius variable is the distance between the planet and the sun
+# angle variable is the angle made by the sun on the Oxy plane
+# there are 9 planets revolving around the sun so 360/9 = 40, each planet is 40 degrees apart, angle has a unit of radians
+# t variable is the time variable, that is, when taking cos, sine of t, each frame the planets will change position according to the coordinates calculated by t
+# I randomly gave the distance of these 9 planets because I was lazy to calculate hehe
 
     radius_1 = 2
     mercury.x = math.cos(t)*radius_1
