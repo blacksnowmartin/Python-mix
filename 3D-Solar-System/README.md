@@ -1,6 +1,8 @@
 # 3D SOLAR SYSTEM
 
-Author: Nguyen Hoang Phuc
+
+Author: Martin Kitonga
+Inspiration from Nguyen Hoang Phuc
 
 Time: Febuary 1, 2022
 
