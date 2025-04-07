@@ -26,6 +26,9 @@ class AlchemyElement(Entity):
                 random.randint(150, 255)
             )
             self.is_transformed = True
+            # Play transform sound if available
+            if 'transform_sound' in globals():
+                transform_sound.play()
 
     def update(self):
         if self.is_transformed:
@@ -92,7 +95,7 @@ def on_click():
         
         # Check if all elements are transformed
         if all(thought.is_transformed for thought in negative_thoughts):
-            window.color = lerp(window.color, color.rgb(50, 100, 150), time.dt * 2)
+            window.animate_color(color.rgb(50, 100, 150), duration=2)
 
 mouse.on_click = on_click
 
@@ -101,7 +104,7 @@ camera.orthographic = True
 camera.fov = 10
 EditorCamera()
 
-# Ambient animation
+# Global update function
 def update():
     for thought in negative_thoughts:
         if not thought.is_transformed:
