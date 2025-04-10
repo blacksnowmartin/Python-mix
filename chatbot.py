@@ -3,7 +3,7 @@ import openai
 openai_api_key = "sk-AdfwF87cQTyqF9UqucUCtT3lBfkFDAEJ82eepiDsBkwube9l"
 
 def chat_with_gpt(prompt):
-    response = openai.ChatCompletion.create(
+    response =openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=[{"role": "user", "content": prompt}]
     )
