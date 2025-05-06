@@ -39,3 +39,5 @@ while running:
 
 # Quit Pygame
 pygame.quit()
+
+# Check for a way this game can be switched to web3
